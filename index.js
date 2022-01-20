@@ -32,6 +32,11 @@ function decrypt(str) {
 // -----------------------------------------------
 
 $(document).ready(function () {
+    $('#data').keypress(function(e){
+        if(e.key.match(/[a-z]/)==null){
+            e.preventDefault()
+        }
+    })
     $('#result').hide()
     $('#copy').hide()
     $('#btnEncrypt').click(function () {
