@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>ONE Challenge</title>
+</head>
+
+<body>
+    <div class="container mb-5">
+        <div class="pt-4">
+            <img src="./img/Vector.svg" alt="Logo Alura" height="60px" />
+        </div>
+        <div class="row">
+            <div class="height col-12 col-lg-8 d-flex flex-column justify-content-between p-3">
+                <textarea id="data" rows="20" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="w-100">
+                    <p><i class="fas fa-exclamation-circle"></i> Solo letras minúsculas y sin acentos</p>
+                    <div class="row pt-2">
+                        <button id="btnEncrypt" type="button"
+                            class="btn btn-blue col m-2 btn-rounded">Encriptar</button>
+                        <button id="btnDecrypt" type="button"
+                            class="btn btn-outline-blue col m-2 btn-rounded">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 bg-white rounded-9 shadow-3-soft d-flex flex-column justify-content-center p-3">
+                <div id="noData" class="noData d-flex flex-column justify-content-center align-items-center">
+                    <img id="imageM" src="./img/Muñeco.svg" alt="Muñeco" class="noData img-fluid d-none d-lg-block">
+                    <h4 class="noData h4-title">Ningún mensaje fue encontrado</h4>
+                    <p class="noData">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <textarea id="result" rows="18"></textarea>
+                <button id="copy" class="btn btn-outline-blue-light btn-rounded">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-white d-flex justify-content-around align-items-center">
+            <img src="./img/logoPage.svg" alt="Juan Ruiz Logo" width="80px">
+            <a class="text-black" target="_blank" href="https://github.com/JuanVSDavid">© 2021 Copyright: Juan Ruiz</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
