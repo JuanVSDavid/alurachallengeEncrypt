@@ -33,7 +33,7 @@ function decrypt(str) {
 
 $(document).ready(function () {
     $('#data').keypress(function(e){
-        if(e.key.match(/[a-z]/)==null){
+        if(e.key.match(/^[a-z\s]+$/)==null ){
             e.preventDefault()
         }
     })
